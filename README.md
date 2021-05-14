@@ -8,9 +8,9 @@ La práctica aborda la construcción de un servicio de predicción de humedad y 
 
 Las tareas incluidas son las siguientes:
 
-- **DatosA y DatosB:** se descargan [humidity.zip]() y [temperature.zip](), que contienen datos sobre la temperatura y humedad de distintas ciudades a lo largo de un período de tiempo. 
+- **DatosA y DatosB:** se descargan [humidity.zip](https://github.com/aure-nogueras/CC_P2_airflow/tree/main/datos) y [temperature.zip](https://github.com/aure-nogueras/CC_P2_airflow/tree/main/datos), que contienen datos sobre la temperatura y humedad de distintas ciudades a lo largo de un período de tiempo. 
 - **DescompresionA y DescompresionB:** se descomprimen las carpetas en el directorio `/tmp`.
-- **DescargaLimpieza y LimpiezaDatos:** se descarga [limpieza_datos.py]() y se utiliza sobre los datos descargados. De este modo, se cogen solo los registros referentes a San Francisco y se fusionan en un único fichero `data.csv`. Además, solo se han tomado 40 filas para agilizar las predicciones posteriores.
+- **DescargaLimpieza y LimpiezaDatos:** se descarga [limpieza_datos.py](https://github.com/aure-nogueras/CC_P2_airflow/blob/main/datos/limpieza_datos.py) y se utiliza sobre los datos descargados. De este modo, se cogen solo los registros referentes a San Francisco y se fusionan en un único fichero `data.csv`. Además, solo se han tomado 40 filas para agilizar las predicciones posteriores.
 - **DescargaBBDD y ExtraccionBBDD:** se descarga y extrae la carpeta [database.zip](https://github.com/aure-nogueras/CC_P2_airflow/blob/main/database.zip), que contiene un fichero `docker-compose.yml` y sus correspondientes variables de entorno, almacenadas en `.env`.
 - **LanzamientoBBDD:** se lanza el `docker-compose` y se inyectan los datos contenidos en `data.csv`.
 - **DescargaAPI1 y DescargaAPI2:** se descargan las carpetas [carpeta_v1.zip](https://github.com/aure-nogueras/CC_P2_airflow/blob/main/carpeta_v1.zip) y [carpeta_v2.zip](https://github.com/aure-nogueras/CC_P2_airflow/blob/main/carpeta_v2.zip). 
